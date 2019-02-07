@@ -1,7 +1,7 @@
 package cz.mg.projectexplorer.components.wrappers;
 
+import cz.mg.collections.list.chainlist.ChainList;
 import cz.mg.projectexplorer.components.extensions.NavigationButton;
-import cz.mg.collections.chainlist.ChainList;
 import cz.mg.collections.node.TreeNode;
 import cz.mg.projectexplorer.utilities.NavigationListener;
 import java.awt.event.ActionEvent;

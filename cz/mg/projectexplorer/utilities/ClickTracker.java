@@ -1,6 +1,6 @@
 package cz.mg.projectexplorer.utilities;
 
-import cz.mg.collections.chainlist.ChainList;
+import cz.mg.collections.list.chainlist.ChainList;
 
 
 public class ClickTracker {

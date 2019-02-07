@@ -1,6 +1,6 @@
 package cz.mg.projectexplorer.maps;
 
-import cz.mg.collections.chainlist.ChainList;
+import cz.mg.collections.list.chainlist.ChainList;
 import cz.mg.collections.node.TreeNode;
 import cz.mg.compiler.entities.a.segments.Page;
 import cz.mg.compiler.entities.a.segments.tokens.ClosingToken;

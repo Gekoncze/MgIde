@@ -1,6 +1,7 @@
 package cz.mg.projectexplorer.components.extensions;
 
 import cz.mg.compiler.Location;
+import cz.mg.compiler.entities.resources.ExternalFile;
 import cz.mg.compiler.entities.resources.InternalFile;
 import cz.mg.compiler.tasks.TaskError;
 import cz.mg.projectexplorer.graphics.Highlight;
@@ -25,7 +26,7 @@ public class TaskErrorPanel extends javax.swing.JPanel {
     
     private String[] loadCode(String path){
         try {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(new InternalFile(null, null, path).getStream()));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(new ExternalFile(null, null, path).getStream()));
             LinkedList<String> lines = new LinkedList<>();
             String line;
             while((line = reader.readLine()) != null) lines.add(line);

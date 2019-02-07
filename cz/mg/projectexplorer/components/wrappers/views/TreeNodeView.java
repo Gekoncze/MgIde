@@ -1,7 +1,8 @@
 package cz.mg.projectexplorer.components.wrappers.views;
 
-import cz.mg.collections.chainlist.ChainList;
-import cz.mg.collections.chainlist.ChainListItem;
+import cz.mg.collections.list.List;
+import cz.mg.collections.list.chainlist.ChainList;
+import cz.mg.collections.list.chainlist.ChainListItem;
 import cz.mg.collections.node.TreeNode;
 import cz.mg.projectexplorer.utilities.ClickTracker;
 import cz.mg.projectexplorer.components.extensions.NavigationIcon;
@@ -34,7 +35,7 @@ public class TreeNodeView extends WrapperComponent<TreeNode> {
         
         selectedIconItem = null;
 		
-        ChainList<TreeNode> nodes = getObject().getChildren();
+        List<TreeNode> nodes = getObject().getChildren();
 		for(TreeNode currentNode : nodes){
 			NavigationIcon icon = new NavigationIcon(currentNode);
             icons.addLast(icon);
